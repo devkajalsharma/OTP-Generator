@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(32, 83, 110);
+    }
+
+    .box {
+        display: inline-block;
+        background-color: rgb(15, 27, 34);
+        ;
+        padding: 150px;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    #otp {
+        color: rgb(255, 255, 255);
+        margin-left: 80px;
+    }
+
+    button {
+        width: 200px;
+        height: 30px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div id="otp">OTP</div><br>
+
+        <button onclick="document.getElementById('otp').innerHTML=getotp(1000,10000)">Get OTP</button>
+
+
+
+        <script src="script.js"></script>
+
+        
+    </div>
+</body>
+
+</html>
